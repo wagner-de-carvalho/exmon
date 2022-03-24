@@ -1,8 +1,8 @@
-GET http://localhost:4000/api/trainers
+GET http://localhost:4000/api/trainers/abb307bd-f4a6-4114-89e9-0cd849099d9c
 
 ###
 
-GET http://localhost:4000/api/trainers
+DELETE http://localhost:4000/api/trainers/816a6a4a-e493-46e6-ae63-041fd8c97404
 
 ###
 POST http://localhost:4000/api/trainers
@@ -11,4 +11,13 @@ content-type: application/json
 {
     "name": "Treinador",
     "password": "123459"
+}
+
+###
+PUT http://localhost:4000/api/trainers/abb307bd-f4a6-4114-89e9-0cd849099d9c
+content-type: application/json
+
+{
+    "name": "Novo Treinador",
+    "password": "12345c"
 }

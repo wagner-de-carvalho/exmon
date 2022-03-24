@@ -1,8 +1,10 @@
 defmodule ExmonWeb.ErrorView do
   use ExmonWeb, :view
   import Ecto.Changeset, only: [traverse_errors: 2]
+  alias Ecto.Changeset
 
-  def render("error.json", %{error: errors}), do: translate_errors(errors)
+  def render("error.json", %{error: %Changeset{} = errors}), do: translate_errors(errors)
+  def render("error.json", %{error: errors}), do: errors
 
   defp translate_errors(changeset) do
     traverse_errors(changeset, fn {msg, opts} ->

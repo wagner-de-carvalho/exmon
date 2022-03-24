@@ -5,7 +5,7 @@ defmodule Exmon.Trainer do
 
   @primary_key {:id, Ecto.UUID, autogenerate: true}
   @required_params [:name, :password]
-  @derive {Jason.Encoder, only: [:id, :name, :inserted_at]}
+  @derive {Jason.Encoder, only: [:id, :name, :inserted_at, :updated_at]}
 
   def build(params) do
     params
