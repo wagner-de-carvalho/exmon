@@ -9,6 +9,10 @@ GET http://localhost:4000/api/pokemons/pikach
 DELETE http://localhost:4000/api/trainers/816a6a4a-e493-46e6-ae63-041fd8c97404
 
 ###
+DELETE http://localhost:4000/api/trainer_pokemons/1340831e-54c1-4eb6-8a1f-7cd53050e5ec
+
+
+###
 POST http://localhost:4000/api/trainers
 content-type: application/json
 

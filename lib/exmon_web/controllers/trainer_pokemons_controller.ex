@@ -11,4 +11,12 @@ defmodule ExmonWeb.TrainerPokemonsController do
       |> render("trainer_pokemon.json", pokemon: pokemon)
     end
   end
+
+  def delete(conn, %{"id" => id}) do
+    with {:ok, _pokemon} <- Exmon.delete_trainer_pokemon(id) do
+      conn
+      |> put_status(:no_content)
+      |> text("")
+    end
+  end
 end
