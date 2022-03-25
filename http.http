@@ -2,7 +2,7 @@ GET http://localhost:4000/api/trainers/271a8632-c9e7-41cd-9e82-8e3d91797509
 
 ###
 
-GET http://localhost:4000/api/pokemons/pikachu
+GET http://localhost:4000/api/pokemons/pikach
 
 ###
 
