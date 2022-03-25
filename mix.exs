@@ -45,7 +45,8 @@ defmodule Exmon.MixProject do
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:argon2_elixir, "~> 2.0"},
-      {:tzdata, "~> 1.1"}
+      {:tzdata, "~> 1.1"},
+      {:tesla, "~> 1.4"},
     ]
   end
 

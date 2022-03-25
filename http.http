@@ -2,6 +2,10 @@ GET http://localhost:4000/api/trainers/abb307bd-f4a6-4114-89e9-0cd849099d9c
 
 ###
 
+GET http://localhost:4000/api/pokemons/pikachu
+
+###
+
 DELETE http://localhost:4000/api/trainers/816a6a4a-e493-46e6-ae63-041fd8c97404
 
 ###
