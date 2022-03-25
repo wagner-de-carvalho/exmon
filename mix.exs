@@ -47,6 +47,7 @@ defmodule Exmon.MixProject do
       {:argon2_elixir, "~> 2.0"},
       {:tzdata, "~> 1.1"},
       {:tesla, "~> 1.4"},
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
     ]
   end
 
