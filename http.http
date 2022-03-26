@@ -11,6 +11,8 @@ DELETE http://localhost:4000/api/trainers/816a6a4a-e493-46e6-ae63-041fd8c97404
 ###
 DELETE http://localhost:4000/api/trainer_pokemons/1340831e-54c1-4eb6-8a1f-7cd53050e5ec
 
+###
+GET http://localhost:4000/api/trainer_pokemons/11ffc595-fed8-40f4-8cf1-f238edfae5ba
 
 ###
 POST http://localhost:4000/api/trainers

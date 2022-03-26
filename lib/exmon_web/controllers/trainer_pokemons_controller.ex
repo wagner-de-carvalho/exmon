@@ -19,4 +19,12 @@ defmodule ExmonWeb.TrainerPokemonsController do
       |> text("")
     end
   end
+
+  def show(conn, %{"id" => id}) do
+    with {:ok, trainer_pokemon} <- Exmon.fetch_trainer_pokemon(id) do
+      conn
+      |> put_status(:ok)
+      |> render("show.json", trainer_pokemon: trainer_pokemon)
+    end
+  end
 end
