@@ -15,6 +15,7 @@ defmodule ExmonWeb.Router do
     get "/pokemons/:name", PokemonsController, :show
   end
 
+  # coveralls-ignore-start
   scope "/", ExmonWeb do
     pipe_through :api
 
@@ -49,4 +50,6 @@ defmodule ExmonWeb.Router do
       forward "/mailbox", Plug.Swoosh.MailboxPreview
     end
   end
+
+  # coveralls-ignore-stop
 end
