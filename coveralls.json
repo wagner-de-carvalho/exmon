@@ -1,9 +1,10 @@
 {
     "skip_files": [
         "lib/exmon/application.ex",
+        "lib/exmon.ex",
         "lib/exmon_web.ex",
+        "lib/exmon_web/views/*",
         "lib/exmon/mailer.ex",
-        "lib/exmon_web/views/error_helpers",
         "test/support/*",
         "lib/exmon_web/telemetry.ex",
         "lib/exmon_web/router.ex"
@@ -11,6 +12,6 @@
     "coverage_options": {
         "treat_no_relevant_lines_as_covered": true,
         "output_dir": "cover/",
-        "minimum_coverage": 0.5
+        "minimum_coverage": 10
     }
 }
