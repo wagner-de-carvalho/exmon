@@ -27,4 +27,12 @@ defmodule ExmonWeb.TrainerPokemonsController do
       |> render("show.json", trainer_pokemon: trainer_pokemon)
     end
   end
+
+  def update(conn, params) do
+    with {:ok, pokemon} <- Exmon.update_trainer_pokemon(params) do
+      conn
+      |> put_status(:ok)
+      |> render("update.json", pokemon: pokemon)
+    end
+  end
 end
