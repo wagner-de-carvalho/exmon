@@ -37,6 +37,11 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+config :exmon, ExmonWeb.Auth.Guardian,
+  issuer: "exmon",
+  # mix guardian.gen.secret
+  secret_key: "Pi9mzIEmMoSqDe1uURwzAa4BFfGI4pEl3RTKayY8XjuRAhjwVaQ1OjqhVSI2eOll"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"
