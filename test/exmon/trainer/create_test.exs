@@ -1,6 +1,5 @@
 defmodule Exmon.Trainer.CreateTest do
   use Exmon.DataCase, async: true
-  alias Ecto.Changeset
   alias Exmon.{Repo, Trainer}
   alias Trainer.Create
 
