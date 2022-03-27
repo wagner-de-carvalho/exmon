@@ -27,8 +27,17 @@ POST http://localhost:4000/api/trainers
 content-type: application/json
 
 {
-    "name": "Jora",
-    "password": "xyzkpa"
+    "name": "Oran",
+    "password": "xyzpan"
+}
+
+###
+POST http://localhost:4000/api/trainers/signin
+content-type: application/json
+
+{
+    "id": "ee007900-d9a2-42ee-b165-e0d93e7f488f",
+    "password": "xyzpan"
 }
 
 ###
