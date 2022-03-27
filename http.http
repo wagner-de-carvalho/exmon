@@ -27,8 +27,8 @@ POST http://localhost:4000/api/trainers
 content-type: application/json
 
 {
-    "name": "Ash",
-    "password": "123xpto"
+    "name": "Jora",
+    "password": "xyzkpa"
 }
 
 ###
