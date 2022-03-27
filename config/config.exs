@@ -42,6 +42,10 @@ config :exmon, ExmonWeb.Auth.Guardian,
   # mix guardian.gen.secret
   secret_key: "Pi9mzIEmMoSqDe1uURwzAa4BFfGI4pEl3RTKayY8XjuRAhjwVaQ1OjqhVSI2eOll"
 
+config :exmon, ExmonWeb.Auth.Pipeline,
+  module: ExmonWeb.Auth.Guardian,
+  error_handler: ExmonWeb.Auth.ErrorHandler
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"

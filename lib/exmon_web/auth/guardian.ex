@@ -1,6 +1,7 @@
 defmodule ExmonWeb.Auth.Guardian do
   use Guardian, otp_app: :exmon
   alias Exmon.{Repo, Trainer}
+
   def subject_for_token(trainer, _claims) do
     sub = to_string(trainer.id)
     {:ok, sub}

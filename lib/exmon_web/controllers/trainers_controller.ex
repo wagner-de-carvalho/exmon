@@ -34,7 +34,7 @@ defmodule ExmonWeb.TrainersController do
     with {:ok, trainer} <- Exmon.fetch_trainer(id) do
       conn
       |> put_status(:ok)
-      |> render("trainer.json", trainer: trainer)
+      |> render("show_trainer.json", trainer: trainer)
     end
   end
 

@@ -5,6 +5,7 @@ defmodule ExmonWeb.ErrorView do
 
   def render("error.json", %{error: %Changeset{} = errors}), do: translate_errors(errors)
   def render("error.json", %{error: errors}), do: errors
+  def render("401.json", %{error: error}), do: %{message: error}
 
   defp translate_errors(changeset) do
     traverse_errors(changeset, fn {msg, opts} ->

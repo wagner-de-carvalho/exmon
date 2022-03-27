@@ -1,4 +1,6 @@
-GET http://localhost:4000/api/trainers/271a8632-c9e7-41cd-9e82-8e3d91797509
+GET http://localhost:4000/api/trainers/ee007900-d9a2-42ee-b165-e0d93e7f488f
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJleG1vbiIsImV4cCI6MTY1MDgyNzQ3OSwiaWF0IjoxNjQ4NDA4Mjc5LCJpc3MiOiJleG1vbiIsImp0aSI6IjBmYTQxMjYyLTU0ZjctNDM1ZS05NmJlLTk4NGJhNGNmMjA4NCIsIm5iZiI6MTY0ODQwODI3OCwic3ViIjoiZWUwMDc5MDAtZDlhMi00MmVlLWIxNjUtZTBkOTNlN2Y0ODhmIiwidHlwIjoiYWNjZXNzIn0.dnmWZBeOL08HMn0cGmpGIzI17uH3bFjFwNj0VJpA5ClS9RkjqnQKC0L67zBzrPY51P3FKLk610TM0EOgYbeGjw
 
 ###
 
