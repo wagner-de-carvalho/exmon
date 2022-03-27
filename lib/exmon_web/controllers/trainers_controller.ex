@@ -1,7 +1,7 @@
 defmodule ExmonWeb.TrainersController do
   use ExmonWeb, :controller
-  alias ExmonWeb.FallbackController
   alias ExmonWeb.Auth.Guardian
+  alias ExmonWeb.FallbackController
 
   action_fallback FallbackController
 
